@@ -52,6 +52,7 @@ kmeans=function(data,K=4,stop_crit=10e-5)
   return(list(data=data.frame(data,cluster),centroids=centroids))
 }
 
+#test 
 res=kmeans(DF[1:2],K=5)
 res$centroids$cluster=1:5
 res$data$isCentroid=F
